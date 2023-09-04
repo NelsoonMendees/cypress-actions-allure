@@ -32,7 +32,7 @@ jobs:
         if: always()
         id: allure-report
         with:
-          allure_results: build/cypress/allure-results
+          allure_results: cypress/allure-results
           gh_pages: gh-pages
           allure_report: cypress/allure-report
           allure_history: allure-history
