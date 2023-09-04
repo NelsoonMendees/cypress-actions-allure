@@ -5,11 +5,26 @@
   "main": "index.js",
   "scripts": {
     "cypress:test": "yarn cypress run",
-    "cypress:gui": "yarn cypress open"
+    "cypress:gui": "yarn cypress open",
+    "allure:generate": "allure generate cypress/allure-results --clean -o cypress/allure-report",
+    "allure:open": "allure open cypress/allure-report",
+    "delete:allure:report": "rm -rf cypress/allure-report/* || true",
+    "delete:allure:results": "rm -rf cypress/allure-results/* || true",
+    "delete:results": "rm -rf cypress/results/* || true",
+    "delete:downloads": "rm -rf cypress/downloads/* || true",
+    "allure:clear": "npm run delete:allure:results && npm run delete:allure:report && npm run delete:results && npm run delete:downloads"
+  },
+  "prettier": {
+    "printWidth": 180,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "none"
   },
   "author": "Fernando Papito",
   "license": "MIT",
   "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.40.0",
+    "allure-commandline": "^2.24.0",
     "cypress": "12.5.1"
   }
 }

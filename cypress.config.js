@@ -1,13 +1,22 @@
-const { defineConfig } = require("cypress");
+const { defineConfig } = require('cypress')
+const allureWriter = require('@shelex/cypress-allure-plugin/writer')
 
 module.exports = defineConfig({
-  projectId: 'u5x39s',
   e2e: {
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+      allureWriter(on, config)
+      return config
     },
     viewportWidth: 1280,
     viewportHeight: 720,
-    baseUrl: "https://loginxp.vercel.app"
+    baseUrl: 'https://loginxp.vercel.app',
+    screenshotsFolder: "cypress/results/screenshots",
+    videosFolder: "cypress/results/videos",
+  },
+  env: {
+    allure: true,
+    allureResultsPath: 'cypress/allure-results',
+    allureAttachRequests: true,
+    allureAddVideoOnPass: true
   }
-});
+})

@@ -3,3 +3,6 @@ cypress/videos
 cypress/screenshots
 results
 results/*.xml
+cypress/allure-report/*
+cypress/allure-results/*
+cypress/downloads/*
