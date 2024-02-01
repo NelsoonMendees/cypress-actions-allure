@@ -14,7 +14,6 @@ module.exports = defineConfig({
     videosFolder: "cypress/results/videos",
   },
   env: {
-    allure: true,
     allureAttachRequests: true,
     allureAddVideoOnPass: true
   }
