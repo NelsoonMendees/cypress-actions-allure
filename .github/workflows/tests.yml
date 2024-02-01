@@ -7,7 +7,7 @@ jobs:
   e2e-tests:
     runs-on: ubuntu-latest
     container:
-      image: cypress/browsers:node-20.9.0-chrome-118.0.5993.88-1-ff-118.0.2-edge-118.0.2088.46-1
+      image: cypress/browsers:node-20.11.0-chrome-121.0.6167.85-1-ff-120.0-edge-121.0.2277.83-1
       options: --user 1001
     steps:
       - name: Get project
