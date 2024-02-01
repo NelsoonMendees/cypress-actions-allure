@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Feb 01 18:53:32 GMT 2024","Thu Feb 01 18:53:33 GMT 2024","767","","Login","","","","com sucesso",""
+"passed","Thu Feb 01 18:53:28 GMT 2024","Thu Feb 01 18:53:29 GMT 2024","1146","","Login","","","","usuário obrigatório",""
+"passed","Thu Feb 01 18:53:30 GMT 2024","Thu Feb 01 18:53:31 GMT 2024","765","","Login","","","","usuário não existe",""
+"passed","Thu Feb 01 18:53:29 GMT 2024","Thu Feb 01 18:53:30 GMT 2024","1170","","Login","","","","senha obrigatória",""
+"passed","Thu Feb 01 18:53:31 GMT 2024","Thu Feb 01 18:53:32 GMT 2024","693","","Login","","","","senha incorreta",""
