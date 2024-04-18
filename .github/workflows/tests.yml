@@ -11,7 +11,7 @@ jobs:
       options: --user 1001
     steps:
       - name: Get project
-        uses: actions/checkout@v3.6.0
+        uses: actions/checkout@v4.1.2
 
       - name: Install dependencies
         run: npm install
@@ -20,7 +20,7 @@ jobs:
         run: npx cypress run -b chrome --env allure=true
 
       - name: Get Allure history
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4.1.2
         if: always()
         continue-on-error: true
         with:
